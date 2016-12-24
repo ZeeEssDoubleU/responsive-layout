@@ -1,79 +1,134 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>Zachary Williams | Responsive Layout</title>
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
+        <title>Zachary Williams | Responsive Layout</title>
+		<meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
     
     <body>
-        <header>
-            <div class="nav-header">
-                <ul class="nav">
-                    <li class="name">Zachary Williams</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-            
-        <main>
-            <div class="home">
-                <img src="images/responsive-layout-profile.png" alt="Profile pic." class="profile-pic">
+        <div id="home" class="border clearfix">
+            <div class="container clearfix">
+                <header class="clearfix">
+                    <h1 class="name">Zachary Williams</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <img src="images/responsive-layout-profile.png" alt="Profile Pic." class="profile-pic border">
 
                 <p>Hi!  I'm an aspiring front-end developer who is fascinated by responsive design and css.  I am in the process of completing a degree in front-end web developement at Treehouse and am excited to put my skills to the test!</p>
             </div>
-            
-            <div class="portfolio">
-                <h1>Portfolio</h1>
-                
-                <img src="images/portfolio-1.png">
-                <h2>Marketing Page</h2>
-                <p>This project shows the front page of a marketing website meant for a specific business that I'm interested in.</p>
-                
-                <img src="images/portfolio-2.png">
-                <h2>Search Page</h2>
-                <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-                
-                <img src="images/portfolio-3.png">
-                <h2>Travel App</h2>
-                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-                
-                <img src="images/portfolio-4.png">
-                <h2>Map of Favorite Spots</h2>
-                <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-                
-                <img src="images/portfolio-5.png">
-                <h2>Photo Gallery</h2>
-                <p>This project shows pictures from a recent trip to the viewer and allows to easily navigate through photos.</p>
-                
-                <img src="images/portfolio-6.png">
-                <h2>Calculator</h2>
-                <p>Someone can enter the numbers they want, and press the big blue button and get the result.</p> 
+        </div>
+
+        <div id="portfolio" class="border clearfix">
+            <div class="container clearfix">
+
+                <h1>PORTFOLIO</h1>
+
+                <ul id="portfolio-container" class="clearfix">
+                    <li class="portfolio-section col-768-left col-1024-left">
+                        <img src="images/portfolio-1.png" alt="Portolio 1 Pic." class="border">
+                        <h2>Marketing Page</h2>
+                        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                    </li>
+
+                    <li class="portfolio-section col-768-right col-1024-mid">
+                        <img src="images/portfolio-2.png" alt="Portolio 2 Pic." class="border">
+                        <h2>Search Page</h2>
+                        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                    </li>
+
+                    <li class="portfolio-section col-768-left col-1024-right">
+                        <img src="images/portfolio-3.png" alt="Portolio 3 Pic." class="border">
+                        <h2>Travel App</h2>
+                        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                    </li>
+
+                    <li class="portfolio-section col-768-right col-1024-left">
+                        <img src="images/portfolio-4.png" alt="Portolio 4 Pic." class="border">
+                        <h2>Map of Favorite Spots</h2>
+                        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                    </li>
+
+                    <li class="portfolio-section col-768-left col-1024-mid">
+                        <img src="images/portfolio-5.png" alt="Portolio 5 Pic." class="border">
+                        <h2>Photo Gallery</h2>
+                        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                    </li>
+
+                    <li class="portfolio-section col-768-right col-1024-right">
+                        <img src="images/portfolio-6.png" alt="Portolio 6 Pic." class="border">
+                        <h2>Calculator</h2>
+                        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                    </li>
+                </ul>
             </div>
-            
-            <div class="contact">
-                <h1>Contact</h1>
-                
-                <p>If you're interested in chatting or want more information about what I've been working on, gimme a shout!  I'll fill ya in.</p>
-                
-                <div class="contact-details">
-                    <p>Phone</p>
-                    <p><a href="tel:5702905844">+1(570)290-5844</a></p>
-                
-                    <p>Email</p>  
-                    <p><a href="mailto:zeeessdoubleu@gmail.com">zeeessdoubleu@gmail.com</a></p>
+        </div>
+
+        <div id="about" class="border clearfix">
+            <div class="container clearfix">
+
+                <h1>ABOUT</h1>
+
+                <ul id="about-container" class="clearfix">
+                    <li class="about-section col-768-left">
+                        <h2>Skills</h2>
+                        <p>I currently know HTML and CSS.  I will soon be taking on JavaScript to expand my breadth of knowledge.</p>
+                    </li>
+                    
+                    <li class="about-section col-768-right">
+                        <h2>Interests</h2>
+                        <p>I am fascinated by all aspects of design.  UX/UI design is of particular interest to me.  Creating smooth and seemless interfaces that user's interact with everyday is what I would like to achieve.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact" class="border clearfix">
+            <div class="container">
+                <div id="contact-container" class="clearfix">
+                    <h1>CONTACT</h1>
+
+                    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+
+                    <div id="contact-details" class="clearfix">
+                        <ul id="phone">
+                            <li>Phone</li>
+                            <li><a href="tel:5702905844">+1(570) 290-5844</a></li>
+                        </ul>
+
+                        <div id="email">
+                            <ul>
+                                <li>Email</li>  
+                                <li><a href="mailto:zeeessdoubleu@gmail.com">zeeessdoubleu@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer-container" class="clearfix">
+                    <footer class="clearfix">
+                        <h1 class="name">Zachary Williams</h1>
+                        <nav class="clearfix">
+                            <ul>
+                                <li class="footer-320"><a href="#home">BACK TO TOP</a></li>
+                                <li class="footer-768"><a href="#home">HOME</a></li>
+                                <li class="footer-768"><a href="#portfolio">PORTFOLIO</a></li>
+                                <li class="footer-768"><a href="#about">ABOUT</a></li>
+                                <li class="footer-768"><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </footer>
                 </div>
             </div>
-        </main>
-        
-        <footer>
-            <ul class="nav-footer">
-                <li class="name">Zachary Williams</li>
-                <li><a href="index.html">BACK TO TOP</a></li>
-            </ul>
-        </footer>
+        </div>
     </body>
 </html>
